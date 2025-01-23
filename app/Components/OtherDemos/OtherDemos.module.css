@@ -1,0 +1,123 @@
+/* Base styles */
+.OtherDemos {
+    padding-inline: 200px;
+    padding-block: 20px;
+    margin-block: 50px;
+    position: relative;
+}
+
+.OtherDemos h6 {
+    font-weight: 800;
+    text-align: center;
+    margin-block: 30px;
+    font-size: 40px;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+
+.Box {
+    position: relative;
+    flex-basis: calc(50% - 10px);
+    height: 500px;
+    overflow: hidden;
+    box-shadow: var(--boxShadow);
+    transition: 0.2s ease-in;
+}
+
+.Box:hover {
+    transform: scale(1.01);
+}
+
+.Box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.Content {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.Content a {
+    margin-inline: 10px;
+    border: 0.1px solid #fff;
+    color: #fff;
+    padding: 8px 22px;
+}
+
+/* Media Queries */
+
+/* For screens 1200px and below */
+@media (max-width: 1200px) {
+    .OtherDemos {
+        padding-inline: 100px; /* Adjust padding */
+    }
+
+    .OtherDemos h6 {
+        font-size: 36px; /* Adjust font size */
+    }
+
+    .Box {
+        height: 400px; /* Adjust height */
+    }
+}
+
+/* For screens 968px and below */
+@media (max-width: 968px) {
+    .OtherDemos {
+        padding-inline: 50px; /* Further adjust padding */
+    }
+
+    .OtherDemos h6 {
+        font-size: 32px; /* Further adjust font size */
+    }
+
+    .Box {
+        flex-basis: calc(100% - 10px); /* Full width for smaller screens */
+        height: 300px; /* Further adjust height */
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .OtherDemos {
+        padding-inline: 20px; /* Further adjust padding */
+    }
+
+    .OtherDemos h6 {
+        font-size: 28px; /* Further adjust font size */
+    }
+
+    .Box {
+        height: 250px; /* Further adjust height */
+    }
+}
+
+/* For screens 400px and below */
+@media (max-width: 400px) {
+    .OtherDemos {
+        padding-inline: 10px; /* Minimal padding */
+        margin-block: 20px; /* Adjust margin */
+    }
+
+    .OtherDemos h6 {
+        font-size: 24px; /* Further adjust font size */
+    }
+
+    .Box {
+        height: 200px; /* Further adjust height */
+    }
+
+    .Content a {
+        padding: 6px 12px; /* Adjust padding for buttons */
+    }
+}

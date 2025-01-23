@@ -1,0 +1,32 @@
+export const StaticData = [
+    {
+        id:1,
+        ImgUrl:"/assets/Thumbnail/1.png",
+        SourceCode:"https://github.com/EasyCodingTutorial/coming_soon_1",
+        LiveLink:"https://coming-soon-1-eosin.vercel.app/",
+    },
+    {
+        id:2,
+        ImgUrl:"/assets/Thumbnail/2.png",
+        SourceCode:"https://github.com/EasyCodingTutorial/comingSoon_2",
+        LiveLink:"https://coming-soon-2-two.vercel.app",
+    },
+    {
+        id:3,
+        ImgUrl:"/assets/Thumbnail/3.png",
+        SourceCode:"https://github.com/EasyCodingTutorial/comingSoon_3",
+        LiveLink:"https://coming-soon-3.vercel.app",
+    },
+    {
+        id:4,
+        ImgUrl:"/assets/Thumbnail/4.png",
+        SourceCode:"https://github.com/EasyCodingTutorial/comingSoon_4",
+        LiveLink:"https://coming-soon-4.vercel.app",
+    },
+    {
+        id:5,
+        ImgUrl:"/assets/Thumbnail/5.png",
+        SourceCode:"https://github.com/EasyCodingTutorial/comingSoon_5",
+        LiveLink:"https://coming-soon-5.vercel.app",
+    },
+]

@@ -2,12 +2,9 @@
 import React  from 'react'
 
 import styles from './SliderBg.module.css'  
-
-// For Components
-import { CountDown } from '../CountDown/CountDown'
-
-
-const countdownDate = new Date('2025-05-19T23:18:07')
+import Link from 'next/link'
+ 
+ 
 
 export const SliderBg = () => {
 
@@ -15,30 +12,21 @@ export const SliderBg = () => {
 
   return (
     <div className={styles.SliderBg}>
-        <div>
-            <div className={styles.Content1}> 
-                <div>
-                <h6>E.</h6>
-                <p>Nature Lover</p> 
-                </div>
-            </div>
-             <div>
-                  <video
-                   autoPlay muted loop
-                   src="/assets/video.mp4"></video>
-             </div>
-             <div className={styles.Overlay}></div>
-        </div>
+      <div>
+         <div className={styles.ImgContentBox}>
+           <img src="/assets/MainBg.png" alt="" />
+         </div>
+         <div className={styles.Overlay}></div>
+      </div>
         <div className={styles.MainContent}>
           <div>
-          <h6>Easy Groups of Companies</h6>
-          <h5>Coming Soon</h5> 
-         
-
-            <CountDown
-             deadline={countdownDate}
-            />
-
+            <h3>2025</h3>
+          <h6>Easy Coding Tutorial</h6>
+          <h5>Top 5 Coming Soon Pages..</h5> 
+         <div className={styles.BtnBox}>
+         <Link href={'https://www.youtube.com/@EasyCodingTutorial/videos'} target='_blank'>View Channel</Link>
+         <Link href={'https://github.com/EasyCodingTutorial'} target='_blank'>Source Code</Link>
+         </div>
           </div>
         </div>
        

@@ -1,72 +1,170 @@
-.SliderBg{
+/* Base styles (for screens larger than 1200px) */
+.SliderBg {
+    background: #062218;
+    height: 80vh;
+    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
-.Content1{
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    text-align: center; 
-}
- 
-.Content1 div{
-    background: rgba(0,0,0,0.5);
-    height: max-content;
-    padding: 20px;
-    border-bottom-right-radius: 10px;  border-bottom-left-radius: 10px;
-}
-.Content1 div h6{
-    font-weight: 800;
-    font-size: 60px;
-    color: var(--main);
-}
-.Content1 div p{
-    font-size: 11px ;
-    font-weight: 800;
-}
-
-.SliderBg video{
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-}
-.SliderBg .Overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(122, 118, 118, 0.5));
-}
- 
-
-.MainContent{
+.SliderBg .ImgContentBox {
     position: absolute; 
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    z-index: 100000;
-    color: #fff;
-    text-align: center;
+    right: -550px;
 }
 
-.MainContent div h6{
-    font-weight: 800;
-    font-size: 16px;
+.SliderBg .ImgContentBox img {
+    height: 980px; /* Original height */
+    object-fit: cover;
+    transform: rotate(-42deg);
+}
+
+.SliderBg .Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+
+.MainContent {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    left: 200px;
+    color: #fff;
+}
+
+.MainContent div h3 {
+    font-weight: 700;
+    font-size: 12px;
     color: #ccc;
 }
-.MainContent div h5{
-    font-weight: 900;
-    font-size: 150px;
-    text-shadow: 10px 20px 20px rgba(0,0,0,0.3);
+
+.MainContent div h6 {
+    font-weight: 800;
+    font-size: 30px;
 }
 
- 
+.MainContent div h5 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-block: 20px;
+}
+
+.BtnBox {
+    margin-block: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.BtnBox a {
+    border: 0.1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 22px;
+}
+
+.BtnBox a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Media Queries */
+
+/* For screens 1200px and below */
+@media (max-width: 1200px) {
+    .SliderBg .ImgContentBox img {
+        height: 700px; /* Adjust height for smaller screens */
+    }
+
+    .MainContent {
+        left: 150px; /* Adjust left position */
+    }
+}
+
+/* For screens 968px and below */
+@media (max-width: 968px) {
+    .SliderBg .ImgContentBox img {
+        height: 500px; /* Further adjust height */
+    }
+
+    .MainContent {
+        left: 20px; /* Adjust left position */
+    }
+
+    .MainContent div h5 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    .MainContent div h6 {
+        font-size: 24px; /* Adjust font size */
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .SliderBg .ImgContentBox img {
+        margin-top: 200px;
+        height: 600px; /* Further adjust height */
+    }
+
+    .MainContent {
+        margin-top: 200px;
+        flex-direction: column; /* Stack content vertically */
+        left: 20px; /* Adjust left position */
+        align-items: center; /* Align items to the start */
+        text-align: center;
+    }
+
+    .MainContent div h5 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .MainContent div h6 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .MainContent div h3 {
+        font-size: 10px; /* Adjust font size */
+    }
+
+    .BtnBox a {
+        padding: 6px 16px; /* Adjust padding */
+    }
+}
+
+/* For screens 400px and below */
+@media (max-width: 400px) {
+    .SliderBg { 
+        height: 50vh; 
+    }
+    .SliderBg .ImgContentBox img {
+        height: 200px; /* Further adjust height for very small screens */
+    }
+
+    .MainContent {
+        left: 10px; /* Adjust left position */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .MainContent div h5 {
+        font-size: 20px; /* Further adjust font size */
+    }
+
+    .MainContent div h6 {
+        font-size: 18px; /* Further adjust font size */
+    }
+
+    .MainContent div h3 {
+        font-size: 8px; /* Further adjust font size */
+    }
+
+    .BtnBox a {
+        padding: 4px 12px; /* Adjust padding for buttons */
+    }
+}
