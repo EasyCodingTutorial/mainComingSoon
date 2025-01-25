@@ -1,6 +1,6 @@
 # Top 5 Coming Soon Pages   
 
-## Overview  
+## Overview
 The **Top 5 Coming Soon Pages** project showcases five visually stunning and responsive "Coming Soon" templates built with **Next.js** and **TypeScript**. Each template is unique, featuring countdown timers, customizable components, and sleek designs that are easy to adapt for various use cases.  
 
 This project is perfect for developers looking for inspiration or ready-to-use templates for creating engaging coming soon pages for their upcoming projects.  
