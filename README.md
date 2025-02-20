@@ -80,7 +80,7 @@ I acknowledge that many features are currently missing from the website due to t
 ## If you’d like to contribute to adding these features or notice any additional improvements, feel free to reach out at ecoding45@gmail.com!
 
 ## Learn By Watching Video ▶️
-[![Watch Demo Video]()
+[![Watch Demo Video](https://img.youtube.com/vi/edBnBKzFO4s/maxresdefault.jpg)](https://www.youtube.com/watch?v=edBnBKzFO4s)
 
 ## Future Enhancements
 1. Add an email subscription form to capture user emails for updates.
